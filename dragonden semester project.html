@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Semester Project Phase 1: Dragon's Den</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico?v1">
+        <link rel="stylesheet" href="styles/dragonxden.css">
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Lato&family=Space+Mono&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    </head>
+    <body>
+            
+        <!-- header section here-->
+
+        <header>
+            <a href="#" class="open">Dragon's Den</a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#menu">Menu Additions</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+        </header>
+
+        <!-- home section here  -->
+
+        <section class="home">
+            <div class="row">
+                <div class="column">
+                    <img src="images/homesection1.jpg" style="height:40%" class="round" alt="sampleFood 1" >
+                    <img src="images/homesection2.jpg" style="height:40%" class="round" alt="sampleFood 2">
+                </div>
+
+                <div class="describe">
+                    <h1 class="top" style="font-family: 'Lobster'; letter-spacing: 2px;"> Home of the Dragon </h1>
+                    <p>Opened in 2002, Dragon's Den provides a modern fine-dining approach to traditional Chinese cuisine.</p>
+                    <p>Dragon's Den is known for its 15-course tasting menu, which also includes a la carte offerings.</p>
+                    <p>Today, we continue to give our guests a taste of China in each and every dish prepared.</p>
+                    <p>Each ingredient used in our kitchen is imported from one of the various provinces of China to ensure authenticity of flavor.</p>
+                </div>
+                <div class="column">
+                    <img src="images/homesection3.jpg"  style="height:40%" class="round" alt="sampleFood 3">
+                    <img src="images/homesection4.jpg" style="height:40%"  class="round" alt="sampleFood 4">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- about section starts  -->
+
+        <section class="about" id="about">    
+            <div class="row">
+                <div class="column">
+                    <img src="images/aboutsection3.jpg" style="height:40%" class="round" alt="Food 1">
+                    <img src="images/aboutsection4.jpg" style="height:40%" class="round" alt="Food 2">
+                </div>
+                <div class="describe">
+                    <h1 class="top"> About Us </h1>
+                    <p>Since we began life on the planet Earth, we have been exposed to Chinese food from our parents.</p>
+                    <p>Our mission is to be able to share the flavors of Chinese cuisine in an elevated manner and allows diners to experience the same flavors we grew up on.</p>
+                    <p>Here at Dragon's Den, we are committed to providing an elegant and refined dive into the culture of China through food.</p>
+                    <p>We pride ourselves on an upscale dining environment set in the middle of bustling Chinatown.</p>
+                </div>
+                <div class="column">
+                    <img src="images/aboutsection1.jpg" style="height:40%" class="round" alt="Food 3">
+                    <img src="images/aboutsection2.jpg" style="height:40%" class="round" alt="Food 4">
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu section here  -->
+        <section class="menu" id="menu">
+            <h1 class="top">Menu Additions</h1>
+            <form method="get" action="http://www.randyconnolly.com/tests/process.php">
+                <fieldset>
+                    <p>
+                        <label class="label">Dishes by Protein: </label><br/>
+                        <select class="input" name="protein">
+                            <option>Select a Protein</option>
+                            <option>Duck</option>
+                            <option>Chicken</option>
+                            <option>Beef</option>
+                            <option>Pork</option>
+                            <option>Lamb</option>
+                        </select>
+            
+                    </p>
+                    <p>
+                        <label class="label">Dish Name: </label><br/>
+                        <input class="input" type="text" name="name" />
+                
+                    </p> 
+                    <p>
+                        <label class="label">Description of Item: </label><br/>
+                        <textarea class="input" rows="3" cols="30"></textarea>
+                    </p> 
+                    <p>
+                        <label class="label">Item Price in Dollars: </label><br/>
+                        <input class="input" type="number" name="price" min="0"  />
+            
+                    </p>          
+                    <p>
+                        <label class="label">Dish Flavor Profile Origin by Province: </label><br/>
+                        <select class="input" name="province">
+                            <option>Select a province</option>
+                            <option>Fujian</option>
+                            <option>Guangdong</option>
+                            <option>Sichuan</option>
+                            <option>Hunan</option>
+                            <option>Beijing</option>
+                            <option>Shanghai</option>
+                        </select>
+                    </p>     
+                    <p>
+                        <label class="label">Additional Dish Correspondence</label><br/>
+                        <select class="input">
+                            <option>Select an option</option>
+                            <option>Ready for Menu</option>
+                            <option>Kitchen Testing</option>
+                            <option>Dish Idea</option>
+                        </select>
+                    </p> 
+                    <p>     
+                        <label class="label">Dish Code: </label><br/>
+                        <input class="input" type="text" name="code" maxlength="6" pattern="[a-zA-Z0-9]+"/>
+                    </p>
+                <input class="button" type="submit"/>
+                <input class="button" type="reset"/>
+                </fieldset>
+            </form>
+        </section>
+        <!--Contact section here-->
+
+        <section class="contact" id="contact">
+            <div class="row">
+                <div class="column">
+                    <img src="images/contactus1.webp" alt="staff1" style="height:70%" class="round">
+                </div>
+                <div class="column">
+                    <h1 class="top"> Contact Us! </h1>
+                    <ul>
+                        <li>Address: 63 Mott Street, New York, NY 10013</li>
+                        <li>Call Us At: (917)-743-1234</li>
+                        <li> Email Us At: <a href = "mailto:dragonxden@gmail.com"> dragonxden@gmail.com </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <img src="images/contactus2.webp" alt="staff2" style="height:70%" class="round">
+                </div>
+            </div>
+        </section>
+        
+        <h1></h1>
+        <section class="footer">
+            <div class="wrap">
+                <div class="finish">   
+                    <p>Philip Yung</p>
+                    <p>IT 202 Section 003</p>
+                    <p>Semester Restaurant Project Phase 1</p>
+                    <p>October 14, 2022</p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
