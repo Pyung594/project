@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semester Project Phase 1: Dragon's Den</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?v1" />
+    <link rel="stylesheet" href="styles/dragonxden.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Lato&family=Space+Mono&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster"
+    />
+  </head>
+  <body>
+    <section class="menu" id="menu">
+      <h1 class="top">Menu Additions</h1>
+      <form
+        method="post"
+        action="http://www.randyconnolly.com/tests/process.php"
+        id="dish"
+      >
+        <fieldset>
+          <div id="dishcreate">
+            <div class="column">
+              <p>
+                <label class="label">Dishes by Protein: </label><br />
+                <select class="input" name="protein">
+                  <option>Select a Protein</option>
+                  <option>Duck</option>
+                  <option>Chicken</option>
+                  <option>Beef</option>
+                  <option>Pork</option>
+                  <option>Lamb</option>
+                </select>
+              </p>
+              <p>
+                <label class="label">Dish Name: </label><br />
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  id="DishName"
+                  required
+                />
+              </p>
+              <p>
+                <label class="label">Description of Item: </label><br />
+                <textarea class="input" rows="3" cols="30"></textarea>
+              </p>
+              <p>
+                <label class="label">Item Price in Dollars: </label><br />
+                <input
+                  class="input"
+                  type="number"
+                  name="price"
+                  id="ItemPrice"
+                  min="0"
+                />
+              </p>
+            </div>
+            <div class="column">
+              <p>
+                <label class="label"
+                  >Dish Flavor Profile Origin by Province: </label
+                ><br />
+                <select class="input" name="province">
+                  <option>Select a province</option>
+                  <option>Fujian</option>
+                  <option>Guangdong</option>
+                  <option>Sichuan</option>
+                  <option>Hunan</option>
+                  <option>Beijing</option>
+                  <option>Shanghai</option>
+                </select>
+              </p>
+              <p>
+                <label class="label">Additional Dish Correspondence</label
+                ><br />
+                <select class="input">
+                  <option>Select an option</option>
+                  <option>Ready for Menu</option>
+                  <option>Kitchen Testing</option>
+                  <option>Dish Idea</option>
+                </select>
+              </p>
+              <p>
+                <label class="label">Dish Code: </label><br />
+                <input
+                  class="input"
+                  type="text"
+                  name="code"
+                  maxlength="6"
+                  id="DishCode"
+                  pattern="[a-zA-Z0-9]+"
+                />
+              </p>
+            </div>
+          </div>
+          <input class="button" type="submit" />
+          <input class="button" type="reset" />
+        </fieldset>
+      </form>
+      <div id="error" class="visible"></div>
+    </section>
+  </body>
+  <script src="form_validation.js"></script>
+</html>
